@@ -1,18 +1,12 @@
 #-*- coding: utf-8 -*-
-require 'rubygems'
-require 'rspec'
-#require_relative '../src/string_utils'
-#require '../src/string_utils'
 require 'spec_helper'
-#require_relative '../src/string_utils'
 
 describe StringUtils do
   before do
     @target = StringUtils.new
   end
   it '"abcde" include "b"' do
-    #expect(@target.include?('abcde', 'b')).to eq true
-    expect(@target.include?('abcde', 'b')).to eq false
+    expect(@target.include?('abcde', 'b')).to eq true
   end
   it '"abcde" not include "f"' do
     expect(@target.include?('abcde', 'f')).to eq false
